@@ -5,7 +5,9 @@ It utilizes Firebase - Firestore as database to store/keep track of events acros
 
 
 ## Tech stack involved
-1. Telegram bot api [Link]()
-2. Firebase - Firestore [Link]()
-3. AWS EventBridge (For scheduled running) [Link]()
-4. Python Programming Language
+1. Telegram bot api [Link](https://github.com/python-telegram-bot/python-telegram-bot)
+2. Firebase - Firestore [Link](https://firebase.google.com/docs/firestore/quickstart)
+3. AWS Lambda [Link](https://aws.amazon.com/pm/lambda)
+4. AWS EventBridge Scheduler [Link](https://aws.amazon.com/blogs/compute/introducing-amazon-eventbridge-scheduler/)
+    - To run the Lambda function regularly
+5. Python Programming Language
