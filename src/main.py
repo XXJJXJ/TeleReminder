@@ -36,11 +36,11 @@ async def run_bot_routine():
                         bot_operations.exec_delete(line.removeprefix(DELETE), group_id)
             elif u.message.text.startswith(ADMIN_SAVE) or u.message.text.startswith(ADMIN_DELETE):
                 lines = u.message.text.split("\n")
-                # for line in lines:
-                    # if line.startswith(ADMIN_SAVE):
-                    #     bot_operations.exec_save(line.removeprefix(SAVE), group_id, True)
-                    # elif line.startswith(ADMIN_DELETE):
-                    #     bot_operations.exec_delete(line.removeprefix(DELETE), group_id, True)
+                for line in lines:
+                    if line.startswith(ADMIN_SAVE):
+                        bot_operations.exec_save(line.removeprefix(SAVE), group_id, True)
+                    elif line.startswith(ADMIN_DELETE):
+                        bot_operations.exec_delete(line.removeprefix(DELETE), group_id, True)
 
         await bot_operations.send_daily_reminder(bot, days_before_to_remind)
 
