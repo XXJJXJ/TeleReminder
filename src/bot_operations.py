@@ -63,6 +63,7 @@ async def send_daily_reminder(bot, days_before_to_remind):
         if events:
             msg = "\n".join(events)
             msg = "Friendly reminder:\n" + msg
+            msg = "\nIf you need any help to understand how I work, please read the following guide:\nhttps://github.com/XXJJXJ/TeleReminder/blob/main/docs/user_guide.md"
             # TODO: Help hyperlink (github readme.md) at the end of the message
             try:
                 await bot.send_message(chat_id, msg)
